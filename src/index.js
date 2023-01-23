@@ -55,8 +55,7 @@ function createCountrie(country) {
         </div>
             <p class="capital">Capital: <span>${country[0].capital}</span></p>
             <p class="population">Population: <span>${country[0].population}</span></p>
-            <p class="language">Languages: <span>${Object.values(country[0].languages)
-            .join("")}</span></p>
+            <p class="language">Languages: <span>${Object.values(country[0].languages).join(", ")}</span></p>
     </div>`
     infoEl.innerHTML = marcup;
 };
